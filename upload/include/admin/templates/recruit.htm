@@ -1,0 +1,98 @@
+<style>
+    .specInvis {
+        filter:alpha(opacity=20);
+        -moz-opacity: 0.20;
+        opacity: 0.20;
+    }
+</style>
+
+<table cellpadding="0" cellspacing="0" border="0"><tr><td><img src="include/images/icons/admin/recruit.png" /></td><td width="30"></td><td valign="bottom"><h1>Rekrutierung</h1></td></tr></table>
+<hr style="width: 400px; margin: 0px;">
+<br /><br />
+Hier kannst du mit nur einen Klick einstellen was für Klassen mit ihrer Spezialisierung du für deine Gilde suchst.
+<br /><br />
+<form method="POST" name="form" id="form" action="?recruit">
+    <table cellpadding="4" cellspacing="1" border="0" class="border">
+        <tr>
+            <td class="Chead"><strong>Klasse</strong></td>
+            <td class="Chead" colspan="4"><strong>Spezialisierung</strong></td>
+        </tr>
+        <tr>
+            <td class="Cdark" align="center"><img src="include/images/klassen/Druid.png" alt="Druide" title="Druide" /></td>
+            <td class="Cmite" align="center" width="45px"><a href="?recruit-druid-spec1"><img src="include/images/klassen/skills/druid_balance.png" alt="Gleichgewicht" title="Gleichgewicht" {druid_spec1}/></a></td>
+            <td class="Cmite" align="center" width="45px"><a href="?recruit-druid-spec2"><img src="include/images/klassen/skills/druid_feral_bear.png" alt="Bär" title="Bär" {druid_spec2}/></a></td>
+            <td class="Cmite" align="center" width="45px"><a href="?recruit-druid-spec3"><img src="include/images/klassen/skills/druid_feral_cat.png" alt="Katze" title="Katze" {druid_spec3}/></a></td>
+            <td class="Cmite" align="center" width="45px"><a href="?recruit-druid-spec4"><img src="include/images/klassen/skills/druid_restoration.png" alt="Wiederherstellung" title="Wiederherstellung" {druid_spec4}"></a></td>
+        </tr>
+        <tr>
+            <td class="Cdark" align="center"><img src="include/images/klassen/Warlock.png" alt="Hexenmeister" title="Hexenmeister" /></td>
+            <td class="Cnorm" align="center"><a href="?recruit-warlock-spec1"><img src="include/images/klassen/skills/warlock_affliction.png" alt="Gebrechen" title="Gebrechen" {warlock_spec1}/></a></td>
+            <td class="Cnorm" align="center"><a href="?recruit-warlock-spec2"><img src="include/images/klassen/skills/warlock_demonology.png" alt="Dämonologie" title="Dämonologie" {warlock_spec2}/></a></td>
+            <td class="Cnorm" align="center"><a href="?recruit-warlock-spec3"><img src="include/images/klassen/skills/warlock_destruction.png" alt="Zerstörung" title="Zerstörung" {warlock_spec3}/></a></td>
+            <td class="Cnorm"></td>
+        </tr>
+        <tr>
+            <td class="Cdark" align="center"><img src="include/images/klassen/Hunter.png" alt="Jäger" title="Jäger" /></td>
+            <td class="Cmite" align="center"><a href="?recruit-hunter-spec1"><img src="include/images/klassen/skills/hunter_beast_mastery.png" alt="Tierherrschaft" title="Tierherrschaft" {hunter_spec1}/></a></td>
+            <td class="Cmite" align="center"><a href="?recruit-hunter-spec2"><img src="include/images/klassen/skills/hunter_marksmanship.png" alt="Treffsicherheit" title="Treffsicherheit" {hunter_spec2}/></a></td>
+            <td class="Cmite" align="center"><a href="?recruit-hunter-spec3"><img src="include/images/klassen/skills/hunter_survival.png" alt="Überleben" title="Überleben" {hunter_spec3}/></a></td>
+            <td class="Cmite"></td>
+        </tr>
+        <tr>
+            <td class="Cdark" align="center"><img src="include/images/klassen/Warrior.png" alt="Krieger" title="Krieger" /></td>
+            <td class="Cnorm" align="center"><a href="?recruit-warrior-spec1"><img src="include/images/klassen/skills/warrior_arms.png" alt="Waffen" title="Waffen" {warrior_spec1}/></a></td>
+            <td class="Cnorm" align="center"><a href="?recruit-warrior-spec2"><img src="include/images/klassen/skills/warrior_fury.png" alt="Furor" title="Furor" {warrior_spec2}/></a></td>
+            <td class="Cnorm" align="center"><a href="?recruit-warrior-spec3"><img src="include/images/klassen/skills/warrior_protection.png" alt="Schutz" title="Schutz" {warrior_spec3}/></a></td>
+            <td class="Cnorm"></td>
+        </tr>
+        <tr>
+            <td class="Cdark" align="center"><img src="include/images/klassen/Mage.png" alt="Magier" title="Magier" /></td>
+            <td class="Cmite" align="center"><a href="?recruit-mage-spec1"><img src="include/images/klassen/skills/mage_arcane.png" alt="Arkan" title="Arkan" {mage_spec1}/></a></td>
+            <td class="Cmite" align="center"><a href="?recruit-mage-spec2"><img src="include/images/klassen/skills/mage_fire.png" alt="Feuer" title="Feuer" {mage_spec2}/></a></td>
+            <td class="Cmite" align="center"><a href="?recruit-mage-spec3"><img src="include/images/klassen/skills/mage_frost.png" alt="Frost" title="Frost" {mage_spec3}/></a></td>
+            <td class="Cmite"></td>
+        </tr>
+        <tr>
+            <td class="Cdark" align="center"><img src="include/images/klassen/Paladin.png" alt="Paladin" title="Paladin" /></td>
+            <td class="Cnorm" align="center"><a href="?recruit-paladin-spec1"><img src="include/images/klassen/skills/paladin_holy.png" alt="Heilig" title="Heilig" {paladin_spec1}/></a></td>
+            <td class="Cnorm" align="center"><a href="?recruit-paladin-spec2"><img src="include/images/klassen/skills/paladin_protection.png" alt="Schutz" title="Schutz" {paladin_spec2}/></a></td>
+            <td class="Cnorm" align="center"><a href="?recruit-paladin-spec3"><img src="include/images/klassen/skills/paladin_retribution.png" alt="Vergeltung" title="Vergeltung" {paladin_spec3}/></a></td>
+            <td class="Cnorm"></td>
+        </tr>
+        <tr>
+            <td class="Cdark" align="center"><img src="include/images/klassen/Priest.png" alt="Priester" title="Priester" /></td>
+            <td class="Cmite" align="center"><a href="?recruit-priest-spec1"><img src="include/images/klassen/skills/priest_discipline.png" alt="Disziplin" title="Disziplin" {priest_spec1}/></a></td>
+            <td class="Cmite" align="center"><a href="?recruit-priest-spec2"><img src="include/images/klassen/skills/priest_holy.png" alt="Heilig" title="Heilig" {priest_spec2}/></a></td>
+            <td class="Cmite" align="center"><a href="?recruit-priest-spec3"><img src="include/images/klassen/skills/priest_shadow.png" alt="Schatten" title="Schatten" {priest_spec3}/></a></td>
+            <td class="Cmite"></td>
+        </tr>
+        <tr>
+            <td class="Cdark" align="center"><img src="include/images/klassen/Shaman.png" alt="Schamane" title="Schamane" /></td>
+            <td class="Cnorm" align="center"><a href="?recruit-shaman-spec1"><img src="include/images/klassen/skills/shaman_elemental.png" alt="Elementar" title="Elementar" {shaman_spec1}/></a></td>
+            <td class="Cnorm" align="center"><a href="?recruit-shaman-spec2"><img src="include/images/klassen/skills/shaman_enhancement.png" alt="Verstärkung" title="Verstärkung" {shaman_spec2}/></a></td>
+            <td class="Cnorm" align="center"><a href="?recruit-shaman-spec3"><img src="include/images/klassen/skills/shaman_restoration.png" alt="Wiederherstellung" title="Wiederherstellung" {shaman_spec3}/></a></td>
+            <td class="Cnorm"></td>
+        </tr>
+        <tr>
+            <td class="Cdark" align="center"><img src="include/images/klassen/Rogue.png" alt="Schurke" title="Schurke" /></td>
+            <td class="Cmite" align="center"><a href="?recruit-rogue-spec1"><img src="include/images/klassen/skills/rogue_assassination.png" alt="Meucheln" title="Meucheln" {rogue_spec1}/></a></td>
+            <td class="Cmite" align="center"><a href="?recruit-rogue-spec2"><img src="include/images/klassen/skills/rogue_combat.png" alt="Kampf" title="Kampf" {rogue_spec2}/></a></td>
+            <td class="Cmite" align="center"><a href="?recruit-rogue-spec3"><img src="include/images/klassen/skills/rogue_subtlety.png" alt="Täuschung" title="Täuschung" {rogue_spec3}/></a></td>
+            <td class="Cmite"></td>
+        </tr>
+        <tr>
+            <td class="Cdark" align="center"><img src="include/images/klassen/DeathKnight.png" alt="Todesritter" title="Todesritter" /></td>
+            <td class="Cnorm" align="center"><a href="?recruit-deathknight-spec1"><img src="include/images/klassen/skills/deathknight_blood.png" alt="Blut" title="Blut" {deathknight_spec1}/></a></td>
+            <td class="Cnorm" align="center"><a href="?recruit-deathknight-spec2"><img src="include/images/klassen/skills/deathknight_frost.png" alt="Frost" title="Frost" {deathknight_spec2}/></a></td>
+            <td class="Cnorm" align="center"><a href="?recruit-deathknight-spec3"><img src="include/images/klassen/skills/deathknight_unholy.png" alt="Unheilig" title="Unheilig" {deathknight_spec3}/></a></td>
+            <td class="Cnorm"></td>
+        </tr>
+        <tr>
+            <td class="Cdark" align="center"><img src="include/images/klassen/Monk.png" alt="Mönch" title="Mönch" /></td>
+            <td class="Cmite" align="center"><a href="?recruit-monk-spec1"><img src="include/images/klassen/skills/monk_brewmaster.png" alt="Braumeister" title="Braumeister" {monk_spec1}/></a></td>
+            <td class="Cmite" align="center"><a href="?recruit-monk-spec2"><img src="include/images/klassen/skills/monk_mistweaver.png" alt="Nebelwirker" title="Nebelwirker" {monk_spec2}/></a></td>
+            <td class="Cmite" align="center"><a href="?recruit-monk-spec3"><img src="include/images/klassen/skills/monk_windwalker.png" alt="Windläufer" title="Windläufer" {monk_spec3}/></a></td>
+            <td class="Cmite"></td>
+        </tr>
+    </table>
+</form>
